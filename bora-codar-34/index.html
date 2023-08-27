@@ -1,15 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bora Codar | Lista de Compras | Desafio 34</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bora Codar | Lista de Compras | Desafio 34</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <script src="./main.js" defer></script>
-</head>
-<body>
-  
-</body>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <img class="bg-img" src="./assets/bg-image.png" alt="" />
+    <div class="container">
+      <h1>Lista de Compras</h1>
+      <form class="form" action="">
+        <div class="input-item-wrap">
+          <label for="">Item</label>
+          <div class="input-layout">
+            <input type="text" name="" id="item" />
+          </div>
+        </div>
+
+        <div class="quant-wrap">
+          <label for="">Quantidade</label>
+          <div class="quant-field">
+            <div class="input-layout">
+              <input type="number" name="" id="item" />
+            </div>
+            <select class="measurements" name="">
+              <option value="UN">UN.</option>
+              <option value="L">L</option>
+              <option value="Kg">Kg</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="categ-wrap">
+          <label>Categoria</label>
+          <select name="">
+            <option value="" disabled selected hidden>
+              Selecione a categoria
+            </option>
+            <option value="Padaria">Padaria</option>
+            <option value="Legume">Legume</option>
+            <option value="Carne">Carne</option>
+            <option value="Fruta">Fruta</option>
+            <option value="Bebida">Bebida</option>
+          </select>
+        </div>
+        <button class="btn-form">
+          <img src="./assets/icon.svg" alt="" />
+        </button>
+      </form>
+
+      <div class="list">
+        <div class="item-checklist">
+          <div>
+            <input type="checkbox" name="" id="check" />
+            <div>
+              <span>Maçã</span>
+              <p>2 Unidades</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="tag-category">
+              <img
+                class="tag-category-icon"
+                src="./assets/fruit-icon.svg"
+                alt=""
+              />
+              <span class="tag-category-description">fruta</span>
+            </div>
+            <img src="./assets/menu-icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
